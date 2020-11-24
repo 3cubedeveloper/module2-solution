@@ -1,0 +1,72 @@
+/* For desktop rendering */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.row {
+	width: 98%;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.column {
+	width: 30%;
+	position: relative;
+}
+.column h2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px 30px;
+	border: 1px solid #000;
+	font-size: 125%;
+}
+.chicken-title {
+	background-color: orange;
+}
+.beef-title {
+	background-color: red;
+}
+.sushi-title {
+	background-color: yellow;
+}
+h1 {
+	text-align: center;
+	padding: 30px 0;
+	font-size: 175%;
+}
+
+.content-block {
+	background-color: #58D68D;
+	margin: 0 10px;
+	padding: 60px 15px 20px 15px;
+	float: left;
+	border: 1px solid #000;
+}
+
+section {
+	clear:left;
+}
+/* For tablet rendering */
+@media only screen and (max-width: 991px) {
+	
+	.column-1, .column-2 {
+		width: 46.5%;
+		margin: 0 10px 0 10px;
+	}
+	.column-3 {
+		width: 95%;
+		margin: 10px 10px;
+	}
+}
+
+/* For mobile devices rendering */
+@media only screen and (max-width: 767px) {
+	.column-1, .column-2 {
+		width: 95%;
+		margin-bottom: 15px;
+	}
+	.column-3 {
+		margin-top: 0;
+	}
+}
